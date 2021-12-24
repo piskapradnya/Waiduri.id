@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroundd"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/utama"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="0dp"
+        android:orientation="vertical">
+</LinearLayout>
+
+    <Button
+        android:id="@id/btn_Tambah"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/tambah_produk"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#E3D18A"
+        android:textSize="15sp"
+        android:layout_gravity="end"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_waiduri"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@id/btn_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#FAEDF0"
+                android:textSize="15sp"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

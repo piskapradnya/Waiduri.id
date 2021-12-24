@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgdataproduk"
+    tools:context=".ActivityAdd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/atasproduk" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/namaBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/abeezee"
+            android:text="Nama Produk"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/manfaat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/abeezee"
+            android:text="Manfaat Produk"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editManfaat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/bahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/abeezee"
+            android:text="Bahan Produk"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/bahan1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:text="Kopi"
+                    android:fontFamily="@font/abeezee"/>
+
+                <CheckBox
+                    android:id="@+id/bahan2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:text="Susu"
+                    android:fontFamily="@font/abeezee"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/bahan3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:text="Green Tea"
+                    android:fontFamily="@font/abeezee"/>
+
+                <CheckBox
+                    android:id="@+id/bahan4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:text="Beras"
+                    android:fontFamily="@font/abeezee"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/bahan5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:text="Safron"
+                    android:fontFamily="@font/abeezee"/>
+
+                <CheckBox
+                    android:id="@+id/bahan6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:text="Rose"
+                    android:fontFamily="@font/abeezee"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/abeezee"
+            android:text="Harga"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/abeezee"
+            android:text="Ukuran"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/rGroup_size"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioMini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/abeezee"
+                android:text="Mini" />
+
+            <RadioButton
+                android:id="@+id/radioMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/abeezee"
+                android:text="Medium" />
+
+            <RadioButton
+                android:id="@+id/radioBesar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/abeezee"
+                android:text="Besar" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/jumlahStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/abeezee"
+            android:text="Stock Barang"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <SeekBar
+            android:id="@+id/seekbarStock"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:max="50"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/stockSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:padding="15dp"
+            android:text="-"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnTampilkan"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="45dp"
+            android:backgroundTint="#5D534A"
+            android:text="Simpan"
+            android:textColor="@color/white"
+            android:fontFamily="@font/abeezee"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</ScrollView>
